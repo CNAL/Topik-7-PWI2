@@ -1,0 +1,7 @@
+IDENTIK: app\Http\Controllers\SapaController.php
+IDENTIK: app\Http\Controllers\ProductController.php
+IDENTIK: resources\views\pages\sapa.blade.php
+IDENTIK: resources\views\pages\product.blade.php
+IDENTIK: resources\views\pages\addProduct.blade.php
+IDENTIK: database\migrations\2026_10_29_150050_create_products_table.php
+IDENTIK: blok routes/web.php + route /sapa; route /mahasiswa ditambahkan untuk Soal 1.

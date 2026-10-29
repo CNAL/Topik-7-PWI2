@@ -1,0 +1,7 @@
+HTTP 200 OK: /; isi sesuai.
+HTTP 200 OK: /about; isi sesuai.
+HTTP 200 OK: /contact; isi sesuai.
+HTTP 200 OK: /sapa; isi sesuai.
+HTTP 200 OK: /product; isi sesuai.
+HTTP 200 OK: /product/addProduct; isi sesuai.
+HTTP 200 OK: /mahasiswa; isi sesuai.

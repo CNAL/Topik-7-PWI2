@@ -1,0 +1,67 @@
+No syntax errors detected in D:\UNI Arc 3\PWI 2\modul7-controller\app\Http\Controllers\SapaController.php
+No syntax errors detected in D:\UNI Arc 3\PWI 2\modul7-controller\app\Http\Controllers\ProductController.php
+No syntax errors detected in D:\UNI Arc 3\PWI 2\modul7-controller\app\Http\Controllers\MahasiswaController.php
+No syntax errors detected in D:\UNI Arc 3\PWI 2\modul7-controller\routes\web.php
+No syntax errors detected in D:\UNI Arc 3\PWI 2\modul7-controller\database\migrations\2026_10_29_150050_create_products_table.php
+Verified: only new, empty practice tables in belajar_laravel. Safe to execute the module's migrate:fresh step.
+> php artisan migrate:fresh --no-interaction
+
+  Dropping all tables ................................................................................... 21.99ms DONE
+
+   INFO  Preparing database.  
+
+  Creating migration table .............................................................................. 17.67ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table .................................................................. 55.90ms DONE
+  0001_01_01_000001_create_cache_table .................................................................. 38.62ms DONE
+  0001_01_01_000002_create_jobs_table ................................................................... 46.75ms DONE
+  2026_10_29_150050_create_products_table ............................................................... 12.75ms DONE
+
+> php artisan make:migration create_category_product_table
+
+   INFO  Migration [D:\UNI Arc 3\PWI 2\modul7-controller\database\migrations\2026_10_29_150203_create_category_product_table.php] created successfully.  
+
+> php artisan migrate --no-interaction
+
+   INFO  Running migrations.  
+
+  2026_10_29_150203_create_category_product_table ....................................................... 16.98ms DONE
+
+> php artisan route:list --except-vendor
+
+  GET|HEAD       / .................................................................................. routes/web.php:6
+  GET|HEAD       about ............................................................................. routes/web.php:10
+  GET|HEAD       contact ............................................................................................. 
+  GET|HEAD       mahasiswa ................................................................. MahasiswaController@index
+  GET|HEAD       product ................................................................ ProductController@getProduct
+  GET|HEAD       product/addProduct ..................................................... ProductController@addProduct
+  GET|HEAD       sapa ........................................................................... SapaController@index
+
+                                                                                                    Showing [7] routes
+
+> php artisan migrate:status
+
+  Migration name ...................................................................................... Batch / Status  
+  0001_01_01_000000_create_users_table ....................................................................... [1] Ran  
+  0001_01_01_000001_create_cache_table ....................................................................... [1] Ran  
+  0001_01_01_000002_create_jobs_table ........................................................................ [1] Ran  
+  2026_10_29_150050_create_products_table .................................................................... [1] Ran  
+  2026_10_29_150203_create_category_product_table ............................................................ [2] Ran  
+
+Field	Type	Null	Key	Default	Extra
+id_product	bigint(20) unsigned	NO	PRI	NULL	auto_increment
+name_product	varchar(150)	NO		NULL	
+stock_product	int(11)	NO		NULL	
+price_product	int(11)	NO		NULL	
+desc_product	text	NO		NULL	
+id_category	int(11)	NO		NULL	
+created_at	timestamp	YES		NULL	
+updated_at	timestamp	YES		NULL	
+Field	Type	Null	Key	Default	Extra
+id_category	bigint(20) unsigned	NO	PRI	NULL	auto_increment
+category_name	varchar(255)	NO		NULL	
+description	text	NO		NULL	
+created_at	timestamp	YES		NULL	
+updated_at	timestamp	YES		NULL	

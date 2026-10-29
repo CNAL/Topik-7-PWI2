@@ -1,0 +1,39 @@
+> php artisan config:clear
+
+   INFO  Configuration cache cleared successfully.  
+
+> php artisan make:controller SapaController
+
+   INFO  Controller [D:\UNI Arc 3\PWI 2\modul7-controller\app\Http\Controllers\SapaController.php] created successfully.  
+
+> php artisan make:controller ProductController
+
+   INFO  Controller [D:\UNI Arc 3\PWI 2\modul7-controller\app\Http\Controllers\ProductController.php] created successfully.  
+
+> php artisan make:controller MahasiswaController
+
+   INFO  Controller [D:\UNI Arc 3\PWI 2\modul7-controller\app\Http\Controllers\MahasiswaController.php] created successfully.  
+
+> php artisan make:model Product -m
+
+   INFO  Model [D:\UNI Arc 3\PWI 2\modul7-controller\app\Models\Product.php] created successfully.  
+
+   INFO  Migration [D:\UNI Arc 3\PWI 2\modul7-controller\database\migrations\2026_10_29_150050_create_products_table.php] created successfully.  
+
+> php artisan migrate --no-interaction
+
+   INFO  Preparing database.  
+
+  Creating migration table .............................................................................. 22.13ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table .................................................................. 51.99ms DONE
+  0001_01_01_000001_create_cache_table .................................................................. 34.57ms DONE
+  0001_01_01_000002_create_jobs_table ................................................................... 51.08ms DONE
+  2026_10_29_150050_create_products_table ............................................................... 10.30ms DONE
+
+Field	Type	Null	Key	Default	Extra
+id	bigint(20) unsigned	NO	PRI	NULL	auto_increment
+created_at	timestamp	YES		NULL	
+updated_at	timestamp	YES		NULL	
